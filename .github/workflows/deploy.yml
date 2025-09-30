@@ -35,9 +35,11 @@ jobs:
       - name: Install deps
         run: pnpm install --frozen-lockfile
 
-      # pnpm 10 bloquea scripts; aseguramos sharp/esbuild
+      - name: Approve native builds (esbuild/sharp)
+        run: pnpm approve-builds esbuild sharp || true
+
       - name: Rebuild native deps
-        run: pnpm rebuild sharp esbuild
+        run: pnpm rebuild sharp esbuild || true
 
       - name: Build
         run: pnpm run build
