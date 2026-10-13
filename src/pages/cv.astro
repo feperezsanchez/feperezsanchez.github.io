@@ -3,13 +3,13 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLineElement from "../components/cv/TimeLine.astro";
 ---
 
-<BaseLayout title="Resume" sideBarActiveItemID="cv">
+<BaseLayout title="Currículum" sideBarActiveItemID="cv">
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Sobre mí</div>
   </div>
 
-  <div class="mb-10 text-justify">
-    Ingeniero Industrial con Maestría en Alta Dirección, cursando el Doctorado en Gestión Estratégica de Negocio. Especializado en transformación digital, interacción con sistemas, optimización operativa e investigación aplicada en empresas familiares del sector comercial.
+  <div class="mb-10">
+    Ingeniero Industrial con Maestría en Alta Dirección (MBA), cursando el Doctorado en Gestión Estratégica de Negocio. Especializado en transformación digital, integración de sistemas y optimización operativa dentro de una empresa familiar del sector construcción, con experiencia en investigación aplicada y docencia universitaria.
   </div>
 
   <div class="mb-5">
@@ -18,20 +18,20 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
   <div class="time-line-container grid gap-4 mb-10">
     <TimeLineElement
-      title="Doctorado en Gestión Estratégica de Negocios"
+      title="Doctorado en Gestión Estratégica de Negocio (Ph.D.)"
       subtitle="2026 — presente. Universidad Autónoma de Tamaulipas, México"
     />
     <TimeLineElement
-      title="Maestría en Administración en Área de Alta Dirección"
-      subtitle="2023 — 2024 Instituto de Estudios Superiores de Tamaulipas, México"
+      title="Maestría en Administración (MBA) en Alta Dirección"
+      subtitle="2023 — 2024. IEST Anáhuac, Tamaulipas, México"
     />
     <TimeLineElement
       title="Diplomado en Logística y Cadena de Suministro Empresarial"
-      subtitle="2019 KEDGE Business School, Francia"
+      subtitle="2019. KEDGE Business School, Francia"
     />
     <TimeLineElement
-      title="Licenciado en Ingeniería Industrial y en Sistemas"
-      subtitle="2015 — 2020 Instituto Tecnológico y de Estudios Superiores de Monterrey, México"
+      title="Licenciatura en Ingeniería Industrial y de Sistemas"
+      subtitle="2015 — 2020. Tecnológico de Monterrey, Guadalajara, México"
     />
   </div>
 
@@ -41,64 +41,72 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
   <div class="time-line-container mb-10">
     <TimeLineElement
-      title="Oficina de Proyectos y PMO"
+      title="Estrategia Digital y Operaciones | Miembro del Consejo de Administración"
       subtitle="2020 — presente. Plomería Universal, Tamaulipas, México"
     >
-      Gestión de proyectos de mejora continua y optimización de procesos en la empresa.
-      Desarrollo completo de página web con e-commerce integrado para venta de productos.
-      Implementación de sistema CRM de código abierto para gestión de clientes, operaciones y demás operaciones de soporte.
-      Plomería Universal es una empresa dedicada a la venta de productos y servicios de plomería y materiales.
+      <ul class="list-disc mx-5 grid gap-2">
+        <li>Construí el pipeline de analítica de ventas (Odoo, PostgreSQL, Tableau) que da a la dirección visibilidad diaria del desempeño de ventas por sucursal, vendedor y cliente frente a las metas.</li>
+        <li>Implementé el CRM y desarrollé el canal de comercio electrónico, mejorando los procesos comerciales y logísticos de una operación de distribución multisucursal.</li>
+        <li>Desarrollé la segmentación de clientes RFM y la clasificación de inventarios ABC-XYZ para un catálogo de ~4,500 SKU, apoyando decisiones comerciales y de compras.</li>
+        <li>Diseñé un esquema de comisiones de ventas basado en rangos de utilidad marginal y facilito juntas de S&amp;OP que alinean compras, almacén, operaciones y ventas.</li>
+      </ul>
+    </TimeLineElement>
+    <TimeLineElement
+      title="Profesor de Horario Libre (PHL)"
+      subtitle="2025 — presente. Facultad de Comercio y Administración de Tampico, Universidad Autónoma de Tamaulipas (UAT)"
+    >
+      Imparto cursos de licenciatura en administración de empresas, administración de capital de trabajo, alta dirección y contabilidad financiera.
     </TimeLineElement>
     <TimeLineElement
       title="Consultoría de Proyectos y Operaciones"
-      subtitle="2025 Xphere Technology Company LLC, Estados Unidos (Remoto)"
+      subtitle="2025. Xphere Technology Company LLC, Estados Unidos (remoto)"
     >
       Consultoría en gestión de proyectos y operaciones para operaciones internas.
       Desarrollo de planes de negocio, estrategias de ventas y consultoría de talento humano.
       Xphere Technology Company es una empresa dedicada al desarrollo de inteligencia de negocio de portafolio diverso.
     </TimeLineElement>
     <TimeLineElement
-      title="Proyecto de Optimización. Mejora Continua."
-      subtitle="2019 — 2020 Flex LTD, Jalisco, México"
+      title="Proyecto de Optimización Logística — Practicante"
+      subtitle="2019 — 2020. Flex LTD, Jalisco, México"
     >
-      Proyecto de mejora continua y optimización de procesos en la planta de manufactura.
-      Desarrollo e implementación de sistema de empaquetado.
-      Flex LTD es una empresa dedicada a la manufactura. Fabrican productos plásticos y componentes diversos.
+      Rediseño del sistema interno de empaque en una planta de extrusión de plásticos. Optimización de costos en la cadena de suministro interna mediante la sustitución de materiales de empaque. Mejora en la sostenibilidad operativa y reducción de desperdicio.
     </TimeLineElement>
   </div>
 
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Certificaciones</div>
+    <div class="text-3xl w-full font-bold">Competencias clave</div>
   </div>
 
-  <ul class="list-disc mx-6 mb-10 grid gap-2">
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
+  <ul class="list-disc md:columns-3 columns-2 mx-6 mb-10">
+    <li>Investigación cuantitativa aplicada</li>
+    <li>Analítica de ventas</li>
+    <li>Planeación de inventarios y demanda</li>
+    <li>Segmentación de clientes</li>
+    <li>Gestión financiera</li>
+    <li>Diseño de compensación de ventas</li>
   </ul>
 
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Skills</div>
+    <div class="text-3xl w-full font-bold">Habilidades</div>
   </div>
 
-  <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
+  <ul class="list-disc md:columns-3 columns-2 mx-6 mb-10">
+    <li>Tableau y SQL (PostgreSQL)</li>
+    <li>Análisis estadístico</li>
+    <li>Clasificación de inventarios ABC-XYZ</li>
+    <li>Segmentación RFM</li>
+    <li>Simulación de eventos discretos</li>
+    <li>Sistemas ERP / CRM (Odoo)</li>
+    <li>Excel avanzado</li>
+    <li>S&amp;OP</li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Idiomas</div>
+  </div>
+
+  <ul class="list-disc mx-6">
+    <li>Español (nativo)</li>
+    <li>Inglés (TOEFL ITP: 614)</li>
   </ul>
 </BaseLayout>
